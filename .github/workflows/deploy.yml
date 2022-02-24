@@ -24,7 +24,7 @@ jobs:
             node-version: 14
       - run: npm install -g
       - run: npm install --frozen-lockfile
-      - run: npm build
+      - run: npm run build
       
 
      
