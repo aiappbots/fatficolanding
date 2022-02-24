@@ -1,6 +1,11 @@
 import Head from "next/head";
-// import Image from "next/image";
+import Image from "next/image";
+import Header from "../components/Header";
 
 export default function Index() {
-	return <div className='bg-red-500'>Testing</div>;
+	return (
+		<>
+			<Header />
+		</>
+	);
 }
