@@ -1,25 +1,56 @@
 name: Deploy
-
-on:
+"on":
   push:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      id-token: write
+      contents: read
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Node set-up
+        uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm install -g
-      - run: npm install --frozen-lockfile
-      - run: npm run build
+      - |-
+        run:| npm install -g
+        run:| npm install --frozen-lockfile run:| npm build
       - uses: aws-actions/configure-aws-credentials@v1
-    with:
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      aws-region: us-east-1
-    run: |
-      aws s3 sync . s3://s3://fatficolanding
+      - name: Configure AWS credentials from Test account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+          aws-secret-access-key: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          aws-region: us-east-1
+      - name: Copy files to the test website with the AWS CLI
+        "run:| aws": "s3 sync ./out s3://fatficolanding"
+# name: Deploy
+
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v1
+#         with:
+#           node-version: 14
+#       - run: npm install -g
+
+#       - run: npm install --frozen-lockfile
+#       - run: npm run build
+#       - uses: aws-actions/configure-aws-credentials@v1
+#     with:
+#       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#       aws-region: us-east-1
+#     - run:
+#       aws s3 sync . s3://s3://fatficolanding
