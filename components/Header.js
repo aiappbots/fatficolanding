@@ -1,24 +1,22 @@
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = [
-	// { name: "Solutions", href: "#" },
-	// { name: "Pricing", href: "#" },
-	// { name: "Docs", href: "#" },
-	// { name: "Company", href: "#" },
+	// 	{ name: "Credit Education", href: "#" },
+	// 	{ name: "Pricing", href: "#" },
+	// 	{ name: "Docs", href: "#" },
+	// 	{ name: "Company", href: "#" },
 ];
 
 export default function Header() {
 	return (
-		<header className='bg-indigo-600'>
+		<header className='bg-green-700'>
 			<nav className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Top'>
 				<div className='w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none'>
 					<div className='flex items-center'>
 						<a href='#'>
-							<span className='sr-only'>Workflow</span>
-							<img
-								className='h-10 w-auto'
-								src='https://tailwindui.com/img/logos/workflow-mark.svg?color=white'
-								alt=''
-							/>
+							<span className='sr-only'>FatFico</span>
+
+							<span className='text-black  font-bold text-3xl'>Fat</span>
+							<span className='text-yellow-400  font-bold text-3xl'>Fico</span>
 						</a>
 						<div className='hidden ml-10 space-x-8 lg:block'>
 							{navigation.map((link) => (
@@ -32,15 +30,15 @@ export default function Header() {
 						</div>
 					</div>
 					<div className='ml-10 space-x-4'>
-						<a
+						{/* <a
 							href='#'
-							className='inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75'>
-							Sign up now
-						</a>
+							className='inline-blockbg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75'>
+							Enroll Now
+						</a> */}
 						<a
-							href='#'
-							className='inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50'>
-							Book a ph
+							href='tel:2129205239'
+							className='inline-block bg-yellow-300 py-3 px-8  font-bold border border-transparent rounded-md text-base font-medium hover:bg-yellow-100'>
+							2129205239
 						</a>
 					</div>
 				</div>
