@@ -245,6 +245,11 @@ export default function Footer() {
 				{/* <p className='mt-10 text-base text-gray-400 md:mt-0 -ml-5 md:order-1'>
 					Office: 212-920-5239 | Fax: 516-324-8731
 				</p> */}
+				<div className='px-100 mt-8 flex justify-items-end'>
+					<a href='http://www.digitalmediaflow.com'>
+						Built by Digital Media Flow
+					</a>
+				</div>
 			</div>
 		</footer>
 	);
