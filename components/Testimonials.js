@@ -1,4 +1,7 @@
+import Image from "next/image";
+
 /* This example requires Tailwind CSS v2.0+ */
+
 export default function Testimonials() {
 	return (
 		<section className='py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24'>
@@ -38,7 +41,7 @@ export default function Testimonials() {
 				</svg>
 
 				<div className='relative'>
-					<img
+					<Image
 						className='mx-auto h-8'
 						src='https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg'
 						alt='Workcation'

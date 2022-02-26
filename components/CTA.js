@@ -15,6 +15,8 @@
   ```
 */
 
+import Image from "next/image";
+
 export default function CTA() {
 	return (
 		<div className='bg-white'>
@@ -39,7 +41,7 @@ export default function CTA() {
 						<div className='mt-2 px-6 text-1xl text-white'>Or sign up now</div>
 					</div>
 					<div className='-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1'>
-						<img
+						<Image
 							className='transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20'
 							src='https://res.cloudinary.com/dnba3xeae/image/upload/v1645749999/hreo_logo_1.png'
 							alt='Hereo Image FatFico'
