@@ -54,11 +54,11 @@ export default function Testimonials() {
 						<footer className='mt-8'>
 							<div className='md:flex md:items-center md:justify-center'>
 								<div className='md:flex-shrink-0'>
-									<img
+									{/* <img
 										className='mx-auto h-10 w-10 rounded-full'
 										src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
 										alt=''
-									/>
+									/> */}
 								</div>
 								<div className='mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center'>
 									<div className='text-base font-medium text-gray-900'>
