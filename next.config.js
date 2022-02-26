@@ -7,7 +7,9 @@ module.exports = nextConfig;
 
 module.exports = {
 	images: {
+		loader: "cloudinary",
 		domains: ["res.cloudinary.com"],
+		path: "",
 	},
 	exportPathMap: async function (
 		defaultPathMap,
