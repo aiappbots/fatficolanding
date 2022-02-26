@@ -1,3 +1,5 @@
+import { buildImageUrl } from "cloudinary-build-url";
+
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = [
 	// 	{ name: "Credit Education", href: "#" },
@@ -7,6 +9,12 @@ const navigation = [
 ];
 
 export default function Header() {
+	// const url = buildImageUrl("hreo_logo_1.png", {
+	// 	cloud: {
+	// 		cloudName: "fatfico",
+	// 	},
+	// });
+
 	return (
 		<header className='bg-green-700'>
 			<nav className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' aria-label='Top'>
@@ -30,15 +38,10 @@ export default function Header() {
 						</div>
 					</div>
 					<div className='ml-10 space-x-4'>
-						{/* <a
-							href='#'
-							className='inline-blockbg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75'>
-							Enroll Now
-						</a> */}
 						<a
-							href='tel:2129205239'
-							className='inline-block bg-yellow-300 py-3 px-8  font-bold border border-transparent rounded-md text-base font-medium hover:bg-yellow-100'>
-							2129205239
+							href='https://m89hxl0zo60.typeform.com/to/dkh8ap45'
+							className='mt-8 bg-yellow-300 text-2xl p-4  font-bold border border-transparent rounded-md shadow  w-60 h-20 py-4 inline-flex items-center text-base font-medium text-black hover:bg-yellow-50'>
+							Fix your credit now
 						</a>
 					</div>
 				</div>

@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Notify from "../components/Notify";
 import Stats from "../components/Stats";
 import MoneyBack from "../components/MoneyBack";
+import FAQ from "../components/FAQ";
 
 export default function Index() {
 	return (
@@ -15,6 +16,7 @@ export default function Index() {
 			<CTA />
 			<Stats />
 			<MoneyBack />
+			<FAQ />
 			<Footer />
 		</>
 	);

@@ -1,5 +1,13 @@
 import React from "react";
+import Content from "../components/Content";
+import Layout from "../components/Layout";
 
 export default function refund() {
-	return <div>refund</div>;
+	return (
+		<>
+			<Layout>
+				<Content>hhhhhh</Content>
+			</Layout>
+		</>
+	);
 }

@@ -1,10 +1,7 @@
-import React from "react";
-import Form from "../components/Form";
+import { Widget } from "@typeform/embed-react";
 
 export default function Contact() {
 	return (
-		<div>
-			<Form />
-		</div>
+		<Widget id='dkh8ap45' style={{ width: "100%" }} className='bg-red-200' />
 	);
 }

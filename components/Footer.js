@@ -35,10 +35,10 @@ const navigation = {
 		// { name: "Partners", href: "#" },
 	],
 	legal: [
-		{ name: "Privacy", href: "#" },
-		{ name: "Terms", href: "#" },
-		{ name: "Money Back Guarantee", href: "#" },
-		{ name: "FCRA", href: "#" },
+		{ name: "Privacy", href: "/privacy" },
+		{ name: "Terms", href: "/terms" },
+		{ name: "Money Back Guarantee", href: "/refund" },
+		{ name: "FCRA", href: "/fcra" },
 	],
 	social: [
 		{
@@ -117,9 +117,9 @@ export default function Footer() {
 						<div className='md:grid md:grid-cols-2 md:gap-8'>
 							<div>
 								<a
-									href='#'
+									href='https://m89hxl0zo60.typeform.com/to/dkh8ap45'
 									className='mt-8 bg-yellow-300 text-2xl p-4  font-bold border border-transparent rounded-md shadow  w-60 h-20 py-4 inline-flex items-center text-base font-medium text-black hover:bg-yellow-50'>
-									Get Started Today
+									Fix your credit now
 								</a>
 								<h3 className='text-sm font-semibold text-gray-400 tracking-wider uppercase'>
 									{/* Solutions */}
