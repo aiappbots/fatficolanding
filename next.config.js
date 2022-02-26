@@ -9,7 +9,9 @@ module.exports = {
 	images: {
 		loader: "cloudinary",
 		path: "https://res.cloudinary.com/fatfico/",
+		domains: ["https://res.cloudinary.com"],
 	},
+
 	exportPathMap: async function (
 		defaultPathMap,
 		{ dev, dir, outDir, distDir, buildId }
