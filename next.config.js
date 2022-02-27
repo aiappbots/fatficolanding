@@ -7,7 +7,7 @@ module.exports = nextConfig;
 
 module.exports = {
 	images: {
-    reactStrictMode: true,
+		reactStrictMode: true,
 		loader: "cloudinary",
 		domains: ["res.cloudinary.com"],
 	},
@@ -25,8 +25,3 @@ module.exports = {
 		};
 	},
 };
-
-
-reactStrictMode: true,
-+  images: {
-+   loader: "custom",
