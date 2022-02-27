@@ -7,8 +7,8 @@ module.exports = nextConfig;
 
 module.exports = {
 	images: {
+    reactStrictMode: true,
 		loader: "cloudinary",
-		path: "https://res.cloudinary.com/fatfico/",
 		domains: ["res.cloudinary.com"],
 	},
 
@@ -25,3 +25,8 @@ module.exports = {
 		};
 	},
 };
+
+
+reactStrictMode: true,
++  images: {
++   loader: "custom",

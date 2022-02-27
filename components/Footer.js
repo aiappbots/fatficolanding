@@ -35,7 +35,7 @@ const navigation = {
 		// { name: "Partners", href: "#" },
 	],
 	legal: [
-		{ name: "Privacy", href: "/privacy" },
+		{ name: "Privacy", href: "fatfico.com/privacy" },
 		{ name: "Terms", href: "/terms" },
 		{ name: "Money Back Guarantee", href: "/refund" },
 		{ name: "FCRA", href: "/fcra" },
