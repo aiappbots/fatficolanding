@@ -8,6 +8,18 @@ export default function CTA() {
 		},
 	});
 
+	// 1050 × 1580
+
+	//  // src= "https://res.cloudinary.com/picturecloud7/image/upload/q_auto,f_auto/skiing_st73x7.jpg"
+	//     src={
+	//       "https://res.cloudinary.com/picturecloud7/image/upload/q_auto,f_auto"
+	//     }
+	//     alt="skiing"
+	//     width="672"
+	//     height="504"
+	//     layout="responsive"
+	//     loading="lazy" // Lazy is default
+
 	return (
 		<div className='bg-white'>
 			<div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
@@ -24,8 +36,8 @@ export default function CTA() {
 							</p>
 							<a
 								href='https://m89hxl0zo60.typeform.com/to/dkh8ap45'
-								className='mt-8 bg-yellow-300 text-2xl p-4  font-bold border border-transparent rounded-md shadow  w-60 h-20 py-4 inline-flex items-center text-base font-medium text-black hover:bg-yellow-50'>
-								Start Fixing Credit
+								className='mt-8 bg-yellow-300 text-2xl p-6  font-bold border border-transparent rounded-md shadow  w-50 h-10 mx-auto  inline-flex items-center text-base font-medium text-black hover:bg-yellow-50'>
+								Fix your credit now
 							</a>
 						</div>
 					</div>
@@ -33,8 +45,8 @@ export default function CTA() {
 						<Image
 							className='transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20'
 							src={hero}
-							width={1050}
-							height={1580}
+							width='1050'
+							height='1580'
 							alt='Hero Image FatFico'
 							quality={100}
 							layout='responsive'

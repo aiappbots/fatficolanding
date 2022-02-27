@@ -118,8 +118,8 @@ export default function Footer() {
 							<div>
 								<a
 									href='https://m89hxl0zo60.typeform.com/to/dkh8ap45'
-									className='mt-8 bg-yellow-300 text-2xl p-4  font-bold border border-transparent rounded-md shadow  w-60 h-20 py-4 inline-flex items-center text-base font-medium text-black hover:bg-yellow-50'>
-									Fix your credit now
+									className='mt-8 bg-yellow-300 text-2xl p-6  font-bold border border-transparent rounded-md shadow  w-48 h-10 mx-auto  inline-flex items-center text-base font-medium text-black hover:bg-yellow-50'>
+									Start Today
 								</a>
 								<h3 className='text-sm font-semibold text-gray-400 tracking-wider uppercase'>
 									{/* Solutions */}
