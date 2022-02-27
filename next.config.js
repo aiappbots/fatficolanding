@@ -9,7 +9,8 @@ module.exports = {
 	images: {
 		reactStrictMode: true,
 		loader: "cloudinary",
-		domains: ["res.cloudinary.com"],
+		// domains: ["res.cloudinary.com"],
+		path: "res.cloudinary.com",
 	},
 
 	exportPathMap: async function (
@@ -18,7 +19,14 @@ module.exports = {
 	) {
 		return {
 			"/": { page: "/" },
-			// '/about': { page: '/about' },
+			"/about": { page: "/about" },
+			"/privacy": { page: "/privacy" },
+			"/contact": { page: "/contact" },
+			"/fcra": { page: "/fcra" },
+			"/leadquiz": { page: "/leadquiz" },
+			"/terms": { page: "/terms" },
+			"/refund": { page: "/refund" },
+
 			// '/p/hello-nextjs': { page: '/post', query: { title: 'hello-nextjs' } },
 			// '/p/learn-nextjs': { page: '/post', query: { title: 'learn-nextjs' } },
 			// '/p/deploy-nextjs': { page: '/post', query: { title: 'deploy-nextjs' } },

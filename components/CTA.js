@@ -44,9 +44,9 @@ export default function CTA() {
 					<div className='-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1'>
 						<Image
 							className='transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20'
-							src={hero}
-							width='1050'
-							height='1580'
+							src='https://res.cloudinary.com/fatfico/image/upload/v1645749999/hreo_logo_1.png'
+							width={1050}
+							height={1580}
 							alt='Hero Image FatFico'
 							quality={100}
 							layout='responsive'
