@@ -7,10 +7,7 @@ module.exports = nextConfig;
 
 module.exports = {
 	images: {
-		reactStrictMode: true,
-		loader: "cloudinary",
-		// domains: ["res.cloudinary.com"],
-		path: "res.cloudinary.com",
+		domains: ["res.cloudinary.com"],
 	},
 
 	exportPathMap: async function (
