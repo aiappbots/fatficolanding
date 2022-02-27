@@ -6,11 +6,10 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
-	  images: {
-    loader: 'cloudinary',
-    path: '',
-  },
-}
+	images: {
+		loader: "cloudinary",
+		path: "/",
+	},
 
 	exportPathMap: async function (
 		defaultPathMap,
