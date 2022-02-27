@@ -6,9 +6,11 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
-	images: {
-		domains: ["res.cloudinary.com"],
-	},
+	  images: {
+    loader: 'cloudinary',
+    path: '',
+  },
+}
 
 	exportPathMap: async function (
 		defaultPathMap,
